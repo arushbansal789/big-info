@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header2 {
+  margin: 0;
+  padding: 2em 2em 2em;
+  color: black;
+  overflow: hidden;
+  position: relative;
+
+  font-family: "Ubuntu", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #121212;
+
+  letter-spacing: 5px;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.header2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: skewY(-4deg);
+  background: #ffb606;
+  transform-origin: bottom left;
+  z-index: -1;
+
+  font-family: "Ubuntu", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #121212;
+
+  letter-spacing: 5px;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.nav {
+  background-color: #121212 !important;
+}
+
+.navbar-brand {
+  display: inline-block !important;
+  color: white !important;
+  font-family: "Righteous", serif !important;
+  font-size: 12em !important;
+  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1) !important;
+}
+.navbar-brand after {
+  content: attr(data-shadow) !important;
+  position: absolute !important;
+  top: 0.06em !important;
+  left: 0.06em !important;
+  z-index: -1 !important;
+  text-shadow: none !important;
+  background-image: linear-gradient(
+    45deg,
+    transparent 45%,
+    hsla(48, 20%, 90%, 1) 45%,
+    hsla(48, 20%, 90%, 1) 55%,
+    transparent 0
+  );
+  background-size: 0.05em 0.05em;
+
+  -webkit-text-fill-color: transparent !important;
+
+  animation: shad-anim 15s linear infinite !important;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+
+.nav-link {
+  font-weight: 300 !important;
+  font-size: 1em !important;
+  color: white !important;
+}
+.nav-link:hover {
+  color: #ffb606 !important;
+  text-decoration: underline;
+}
+.site-footer {
+  background-color: #26272b !important;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a:hover {
+  color: rgb(250, 240, 240) !important;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373 !important;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: rgb(250, 240, 240) !important;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.copyright-text {
+  color: #737373;
+  margin: 0;
+}
+.white {
+  color: #fff;
+}
+.gray {
+  color: #bbb;
+}
+.addresses {
+  color: #bbb !important;
+}
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+
+.card-img-top {
+  height: 400px !important;
+}
+.btn-primary {
+  background-color: #ffb606 !important;
+  color: #121212 !important;
+}
+.btn-primary:hover {
+  background-color: #121212 !important;
+  color: #ffb606 !important;
+}
+.card {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.instructor {
+  background-image: url(./imgs/paper1.jpg);
+  background-color: #ffc606;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+}
+.h1 {
+  text-align: center;
+  color: #333333;
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+}
+.p1 {
+  text-align: center;
+  color: #999999;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+.heading {
+  margin: 0 0 30px;
+  padding-top: 42px;
+  padding-bottom: 19px;
+}
+.heading.line {
+  right: 0;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: #333;
+  width: 35px;
+}
+#content {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.card-title.sty {
+  border-left: 5px solid #ffb606;
+  padding: 0px 30px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.card.sty1 {
+  border: none;
+  margin: 0;
+}
+.card-text.sty2 {
+  font-size: 15px;
+  font-family: "Roboto";
+}
+
+.abouts {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(59, 36, 36) !important;
+}
+.demo {
+  background-image: linear-gradient(to right, #ffb606, rgb(255, 247, 0));
+}
+.opposite {
+  transform: rotate(90deg);
+  transform-origin: top left;
+  font-size: 10rem;
+}
+.header3 {
+  margin: 0;
+
+  color: black;
+  overflow: hidden;
+  position: relative;
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #121212;
+
+  letter-spacing: 5px;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.header3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: skewY(-4deg);
+  background: #ffb606;
+  transform-origin: bottom left;
+  z-index: -1;
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #121212;
+
+  letter-spacing: 5px;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.first_button {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
